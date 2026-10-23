@@ -1,0 +1,76 @@
+<svg width="800" height="320" viewBox="0 0 800 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="score-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0d12"/>
+      <stop offset="50%" stop-color="#0f1520"/>
+      <stop offset="100%" stop-color="#0a0d12"/>
+    </linearGradient>
+    <radialGradient id="emerald-glow" cx="45%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#0a0d12" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Frame Background -->
+  <rect width="800" height="320" rx="16" fill="url(#score-bg)"/>
+  <rect width="800" height="320" rx="16" fill="url(#emerald-glow)"/>
+  <rect x="1" y="1" width="798" height="318" rx="15" stroke="#222f44" stroke-width="1.5"/>
+
+  <!-- Top Title Bar -->
+  <g transform="translate(32, 28)">
+    <text x="0" y="16" font-family="Inter, -apple-system, sans-serif" font-weight="700" font-size="15" fill="#10b981" letter-spacing="0.5">⚡ PONYTAIL SCOREBOARD — ZERO-BLOAT BENCHMARK</text>
+    <text x="0" y="34" font-family="Inter, -apple-system, sans-serif" font-weight="400" font-size="12" fill="#94a3b8">Radical minimalism &amp; instant startup compared to standard notification daemons</text>
+  </g>
+
+  <!-- Column Highlight for agent-bell -->
+  <rect x="290" y="72" width="220" height="226" rx="10" fill="#10b9810d" stroke="#10b98144" stroke-width="1.5"/>
+
+  <!-- Table Header -->
+  <g transform="translate(32, 94)">
+    <text x="12" y="0" font-family="Inter, sans-serif" font-weight="600" font-size="12" fill="#94a3b8">METRIC</text>
+    <text x="280" y="0" font-family="Inter, sans-serif" font-weight="700" font-size="13" fill="#10b981">🔔 AGENT-BELL</text>
+    <text x="520" y="0" font-family="Inter, sans-serif" font-weight="600" font-size="12" fill="#64748b">STANDARD DAEMONS</text>
+  </g>
+
+  <!-- Row Dividers -->
+  <line x1="32" y1="106" x2="768" y2="106" stroke="#222f44" stroke-width="1"/>
+  <line x1="32" y1="144" x2="768" y2="144" stroke="#222f44" stroke-width="0.8" opacity="0.6"/>
+  <line x1="32" y1="182" x2="768" y2="182" stroke="#222f44" stroke-width="0.8" opacity="0.6"/>
+  <line x1="32" y1="220" x2="768" y2="220" stroke="#222f44" stroke-width="0.8" opacity="0.6"/>
+  <line x1="32" y1="258" x2="768" y2="258" stroke="#222f44" stroke-width="0.8" opacity="0.6"/>
+
+  <!-- Row 1: Runtime Dependencies -->
+  <g transform="translate(32, 130)">
+    <text x="12" y="0" font-family="Inter, sans-serif" font-weight="500" font-size="12" fill="#e2e8f0">Runtime Dependencies</text>
+    <text x="280" y="0" font-family="JetBrains Mono, monospace" font-weight="700" font-size="12" fill="#10b981">0 (Native Node.js)</text>
+    <text x="520" y="0" font-family="JetBrains Mono, monospace" font-weight="400" font-size="12" fill="#94a3b8">45+ packages</text>
+  </g>
+
+  <!-- Row 2: Bundle Size -->
+  <g transform="translate(32, 168)">
+    <text x="12" y="0" font-family="Inter, sans-serif" font-weight="500" font-size="12" fill="#e2e8f0">Bundle / Package Size</text>
+    <text x="280" y="0" font-family="JetBrains Mono, monospace" font-weight="700" font-size="12" fill="#10b981">~38 KB</text>
+    <text x="520" y="0" font-family="JetBrains Mono, monospace" font-weight="400" font-size="12" fill="#94a3b8">65 MB+</text>
+  </g>
+
+  <!-- Row 3: Startup Latency -->
+  <g transform="translate(32, 206)">
+    <text x="12" y="0" font-family="Inter, sans-serif" font-weight="500" font-size="12" fill="#e2e8f0">Startup Latency</text>
+    <text x="280" y="0" font-family="JetBrains Mono, monospace" font-weight="700" font-size="12" fill="#10b981">12 ms</text>
+    <text x="520" y="0" font-family="JetBrains Mono, monospace" font-weight="400" font-size="12" fill="#94a3b8">850 ms+</text>
+  </g>
+
+  <!-- Row 4: Idle RAM Usage -->
+  <g transform="translate(32, 244)">
+    <text x="12" y="0" font-family="Inter, sans-serif" font-weight="500" font-size="12" fill="#e2e8f0">Idle RAM Usage</text>
+    <text x="280" y="0" font-family="JetBrains Mono, monospace" font-weight="700" font-size="12" fill="#10b981">&lt; 20 MB</text>
+    <text x="520" y="0" font-family="JetBrains Mono, monospace" font-weight="400" font-size="12" fill="#94a3b8">220 MB+</text>
+  </g>
+
+  <!-- Row 5: Ongoing Cloud Cost -->
+  <g transform="translate(32, 282)">
+    <text x="12" y="0" font-family="Inter, sans-serif" font-weight="500" font-size="12" fill="#e2e8f0">Ongoing Cloud Cost</text>
+    <text x="280" y="0" font-family="JetBrains Mono, monospace" font-weight="700" font-size="12" fill="#10b981">$0.00 / month (Free)</text>
+    <text x="520" y="0" font-family="JetBrains Mono, monospace" font-weight="400" font-size="12" fill="#94a3b8">$5 - $20 / month</text>
+  </g>
+</svg>

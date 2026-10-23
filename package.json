@@ -1,0 +1,60 @@
+{
+  "name": "agent-bell",
+  "version": "2.0.0",
+  "description": "The universal notification bell for AI coding agents. Instant push alerts on Telegram, Discord, and Slack when tasks finish.",
+  "type": "module",
+  "main": "./clients/node/notifier.js",
+  "exports": {
+    ".": "./clients/node/notifier.js",
+    "./client": "./clients/node/notifier.js",
+    "./notifier": "./clients/node/notifier.js",
+    "./mcp": "./mcp/server.js",
+    "./git": "./lib/git.js"
+  },
+  "bin": {
+    "agent-bell": "bin/agent-bell.js"
+  },
+  "files": [
+    "bin",
+    "clients",
+    "docs/assets",
+    "lib",
+    "mcp",
+    "plugin",
+    "CHANGELOG.md",
+    "PRIVACY.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "setup": "node bin/agent-bell.js setup",
+    "test:ping": "node plugin/scripts/test-ping.js",
+    "worker:dev": "npm --prefix worker run dev",
+    "worker:deploy": "npm --prefix worker run deploy"
+  },
+  "keywords": [
+    "agent-bell",
+    "antigravity",
+    "claude-code",
+    "telegram",
+    "discord",
+    "slack",
+    "ai-agent",
+    "notifications",
+    "lifecycle-hooks"
+  ],
+  "author": "mocn203",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mocn203/agent-bell.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mocn203/agent-bell/issues"
+  },
+  "homepage": "https://github.com/mocn203/agent-bell#readme"
+}

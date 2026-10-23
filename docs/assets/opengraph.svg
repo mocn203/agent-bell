@@ -1,0 +1,68 @@
+<svg width="1280" height="640" viewBox="0 0 1280 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="og-glow-center" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.18"/>
+      <stop offset="60%" stop-color="#06b6d4" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#0a0d12" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="neon-bell-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <filter id="neon-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="12" flood-color="#10b981" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1280" height="640" fill="#0a0d12"/>
+  <rect width="1280" height="640" fill="url(#og-glow-center)"/>
+
+  <!-- Border Frame -->
+  <rect x="24" y="24" width="1232" height="592" rx="20" stroke="#222f44" stroke-width="1.5" fill="none"/>
+
+  <!-- Hero Container -->
+  <g transform="translate(100, 160)">
+    <!-- Bell Icon Box -->
+    <rect x="0" y="0" width="132" height="132" rx="28" fill="#111620" stroke="url(#neon-bell-grad)" stroke-width="2.5" filter="url(#neon-shadow)"/>
+    <!-- Neon Bell Path -->
+    <path d="M66 38C52 38 45 49 45 64V76L38 83V87H94V83L87 76V64C87 49 80 38 66 38Z" fill="none" stroke="#10b981" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M58 92C58 96.4 61.6 100 66 100C70.4 100 74 96.4 74 92" stroke="#06b6d4" stroke-width="4" stroke-linecap="round"/>
+    <!-- Sonic Waves -->
+    <path d="M26 56C21 64 21 76 26 84" stroke="#06b6d4" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+    <path d="M106 56C111 64 111 76 106 84" stroke="#06b6d4" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+
+    <!-- Typography -->
+    <text x="168" y="58" font-family="Inter, -apple-system, sans-serif" font-weight="700" font-size="64" fill="#ffffff" letter-spacing="-1.5">agent-bell</text>
+    <text x="168" y="102" font-family="Inter, -apple-system, sans-serif" font-weight="400" font-size="22" fill="#94a3b8">The 0-Cost Push Notification &amp; Remote Bell for AI Coding Agents</text>
+  </g>
+
+  <!-- Feature Badges -->
+  <g transform="translate(100, 360)">
+    <!-- Badge 1: 0 Dependencies -->
+    <g transform="translate(0, 0)">
+      <rect width="240" height="48" rx="12" fill="#111620" stroke="#10b98155" stroke-width="1.5"/>
+      <text x="24" y="30" font-family="Inter, sans-serif" font-weight="600" font-size="14" fill="#10b981">⚡ 0 RUNTIME DEPS</text>
+    </g>
+    <!-- Badge 2: < 20MB RAM -->
+    <g transform="translate(256, 0)">
+      <rect width="210" height="48" rx="12" fill="#111620" stroke="#06b6d455" stroke-width="1.5"/>
+      <text x="24" y="30" font-family="Inter, sans-serif" font-weight="600" font-size="14" fill="#06b6d4">💾 &lt; 20MB RAM</text>
+    </g>
+    <!-- Badge 3: Multi-Channel -->
+    <g transform="translate(482, 0)">
+      <rect width="330" height="48" rx="12" fill="#111620" stroke="#f59e0b55" stroke-width="1.5"/>
+      <text x="24" y="30" font-family="Inter, sans-serif" font-weight="600" font-size="14" fill="#f59e0b">📱 TELEGRAM • DISCORD • SLACK</text>
+    </g>
+    <!-- Badge 4: MCP Protocol -->
+    <g transform="translate(828, 0)">
+      <rect width="250" height="48" rx="12" fill="#111620" stroke="#818cf855" stroke-width="1.5"/>
+      <text x="24" y="30" font-family="Inter, sans-serif" font-weight="600" font-size="14" fill="#a5b4fc">🔌 MCP PROTOCOL (STDIO)</text>
+    </g>
+  </g>
+
+  <!-- Bottom Metadata -->
+  <g transform="translate(100, 480)">
+    <text x="0" y="24" font-family="Inter, sans-serif" font-size="16" fill="#64748b" font-weight="500">Cloudflare Edge Sub-15ms  •  Interactive Push Buttons  •  Git Diff Engine  •  Zero Open Ports</text>
+  </g>
+</svg>

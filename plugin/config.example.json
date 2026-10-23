@@ -1,0 +1,7 @@
+{
+  "workerUrl": "https://your-worker-name.your-account.workers.dev/notify",
+  "authSecret": "",
+  "enabled": true,
+  "minDurationSeconds": 0,
+  "language": "en"
+}

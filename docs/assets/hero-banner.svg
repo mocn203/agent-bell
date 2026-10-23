@@ -1,0 +1,71 @@
+<svg width="1200" height="400" viewBox="0 0 1200 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="banner-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0d12"/>
+      <stop offset="50%" stop-color="#0e141e"/>
+      <stop offset="100%" stop-color="#0a0d12"/>
+    </linearGradient>
+    <linearGradient id="beam-grad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="50%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="400" fill="url(#banner-bg)"/>
+  <rect x="10" y="10" width="1180" height="380" rx="16" stroke="#222f44" stroke-width="1.5"/>
+
+  <!-- Left: Mobile Device Card -->
+  <g transform="translate(80, 50)">
+    <rect width="360" height="300" rx="20" fill="#111620" stroke="#222f44" stroke-width="1.5"/>
+    <!-- Mobile Header -->
+    <rect x="0" y="0" width="360" height="42" rx="20" fill="#171f2d"/>
+    <circle cx="28" cy="21" r="5" fill="#ef4444"/>
+    <circle cx="44" cy="21" r="5" fill="#f59e0b"/>
+    <circle cx="60" cy="21" r="5" fill="#10b981"/>
+    <text x="140" y="26" font-family="Inter, sans-serif" font-size="12" fill="#94a3b8" font-weight="600">Telegram Bot</text>
+
+    <!-- Content -->
+    <text x="24" y="80" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#f59e0b">⚠️ APPROVAL REQUIRED [Work4]</text>
+    <text x="24" y="106" font-family="JetBrains Mono, monospace" font-size="12" fill="#e2e8f0">Command: git push origin main</text>
+    <text x="24" y="128" font-family="JetBrains Mono, monospace" font-size="12" fill="#94a3b8">Workspace: /workstation/Work4</text>
+    <text x="24" y="150" font-family="JetBrains Mono, monospace" font-size="12" fill="#10b981">• Diff: +45/-12 (3 files modified)</text>
+
+    <!-- Buttons -->
+    <rect x="24" y="190" width="145" height="42" rx="8" fill="#10b98122" stroke="#10b981" stroke-width="1.5"/>
+    <text x="54" y="216" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#10b981">✅ Approve</text>
+
+    <rect x="185" y="190" width="145" height="42" rx="8" fill="#ef444422" stroke="#ef4444" stroke-width="1.5"/>
+    <text x="228" y="216" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#ef4444">❌ Deny</text>
+
+    <text x="24" y="268" font-family="Inter, sans-serif" font-size="11" fill="#64748b">Timeout: 300s • Two-Way Instant Edge Action</text>
+  </g>
+
+  <!-- Center: Cloudflare Edge Node & Data Beam -->
+  <g transform="translate(480, 160)">
+    <path d="M0 40 L240 40" stroke="url(#beam-grad)" stroke-width="3" stroke-dasharray="6 4"/>
+    <rect x="80" y="10" width="80" height="60" rx="12" fill="#111620" stroke="#06b6d4" stroke-width="2"/>
+    <text x="100" y="38" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#06b6d4">EDGE</text>
+    <text x="92" y="54" font-family="Inter, sans-serif" font-size="9" fill="#94a3b8">&lt; 15ms KV</text>
+  </g>
+
+  <!-- Right: Terminal Screen -->
+  <g transform="translate(760, 50)">
+    <rect width="360" height="300" rx="20" fill="#111620" stroke="#222f44" stroke-width="1.5"/>
+    <!-- Terminal Header -->
+    <rect x="0" y="0" width="360" height="42" rx="20" fill="#171f2d"/>
+    <text x="24" y="26" font-family="JetBrains Mono, monospace" font-size="12" fill="#94a3b8">user@host: ~/Work4 (silent runner)</text>
+
+    <!-- Terminal Output -->
+    <text x="24" y="80" font-family="JetBrains Mono, monospace" font-size="12" fill="#64748b">$ npx agent-bell wrap "git push"</text>
+    <text x="24" y="112" font-family="JetBrains Mono, monospace" font-size="12" fill="#10b981">🔔 [agent-bell] Remote approval requested</text>
+    <text x="24" y="138" font-family="JetBrains Mono, monospace" font-size="12" fill="#f59e0b">⏳ Waiting for mobile tap [300s]...</text>
+    <text x="24" y="174" font-family="JetBrains Mono, monospace" font-size="12" fill="#10b981">✓ Approved via Telegram (Phone)</text>
+    <text x="24" y="200" font-family="JetBrains Mono, monospace" font-size="12" fill="#ffffff">Everything up-to-date</text>
+    <text x="24" y="226" font-family="JetBrains Mono, monospace" font-size="12" fill="#06b6d4">🚀 Execution finished in 14.2s (Exit: 0)</text>
+
+    <!-- Footer Stats -->
+    <rect x="24" y="250" width="312" height="30" rx="6" fill="#171f2d"/>
+    <text x="36" y="270" font-family="JetBrains Mono, monospace" font-size="11" fill="#94a3b8">RAM: 18.2 MB  |  CPU: 0.0%  |  PID: 8420</text>
+  </g>
+</svg>

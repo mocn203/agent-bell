@@ -1,0 +1,12 @@
+{
+  "telegram-task-notifier": {
+    "enabled": true,
+    "Stop": [
+      {
+        "type": "command",
+        "command": "node ./scripts/notify.js",
+        "timeout": 15
+      }
+    ]
+  }
+}

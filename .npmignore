@@ -1,0 +1,10 @@
+.github/
+test/
+worker/
+SUPER_PLAN.md
+FIGMA_SPEC.md
+*.log
+*.pid
+.git/
+.gitignore
+wrangler.jsonc
